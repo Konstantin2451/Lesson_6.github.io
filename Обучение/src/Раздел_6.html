@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/rel.css">
+	<link rel="stylesheet" type="text/css" href="css/animate.min.css">
+	<title>Раздел 6</title>
+</head>
+<body>
+	<header>
+		<h1>Раздел 6</h1>
+		<nav>
+			<ul>
+				<li>Псевдоклассы</li>
+				<li>Псевдоэлементы</li>
+			</ul>
+		</nav>
+	</header>
+	<section>
+		<h2>Дополнение к 5-му разделу</h2>
+		<form>
+		<label for="rad1">Кнопка с лэйблом</label>
+		<input type="radio" name="a" id="rad1">
+		<input type="radio" name="a">Обычная кнопка
+		</form>
+	</section>
+	<section>
+		<h2>Псевдоклассы</h2>
+		<a href="https://yandex.ru/">Обычная ссылка</a>
+		<a href="https://yandex.ru/" id="a_act">Ссылка с active</a>
+		<a href="https://yandex.ru/" id="a_hov">Link with hover</a>
+		<a href="https://yandex.ru/" id="a_came">Link with visited</a>
+		<br>
+		<input type="text" value="Обычный инпут">
+		<input type="text" id="focus" value="Инпут с Псевдоклассом fokus">
+		<br>
+		<ul class="onetoone">
+			<li>first-child</li>
+			<li>nth-child(2)</li>
+			<li>Каждый третий</li>
+			<li>even</li>
+			<li>odd</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Псевдоэлементы</h2>
+		<div>
+			<p id="t1"> First-LineLorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem esse dolorum nesciunt, aperiam accusantium nihil neque dolor, odit voluptates! Molestias, facere, obcaecati voluptas veritatis ea quaerat dolorem consectetur. Enim officia distinctio aut, vel ea, eius. Ratione totam quasi consequuntur natus quis assumenda, deserunt quibusdam amet soluta! 
+			Eveniet, asperiores recusandae.</p>
+			<p id="t2">First-letter Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam exercitationem esse dolorum nesciunt, aperiam accusantium nihil neque dolor, odit voluptates! Molestias, facere, obcaecati voluptas veritatis ea quaerat dolorem consectetur. Enim officia distinctio aut, vel ea, eius. Ratione totam quasi consequuntur natus quis assumenda, deserunt quibusdam amet soluta! Eveniet, asperiores recusandae.</p>
+		</div>
+		<ul id="r">
+			<li>r</li>
+			<li>r</li>
+			<li>r</li>
+			<li>r</li>
+			<li>r</li>
+		</ul>
+		<div>
+			<span>content у after и before должен быть всегда, пусть и пустой</span> 
+			<ul id="r2">
+				<li>r2</li>
+				<li>r2</li>
+				<li>r2</li>
+				<li>r2</li>
+				<li>r2</li>
+			</ul>
+		</div>
+	</section>
+	<section>
+		<h2>Комбинирование псевдоклассов и псевдоэлементов.</h2>
+		<ul id="r3">
+		<li>r3</li>
+		<li>r3</li>
+		<li>r3</li>
+		<li>r3</li>
+		<li>r3</li>
+		</ul>
+	</section>
+	<section>
+		<h2>Анимация с помощью transition</h2>
+		<div class="box"></div>
+		<div class="opacity"><span>Опасити!</span></div>
+		<div class="box2"><a href="https://cubic-bezier.com/">Описание движения</a></div>
+	</section>
+	<section>
+		<h2>CSS3 Анимация с помощью KEYFRAMES</h2>
+		<h4>Эту анимацию поддерживают не все браузеры, если что</h4>
+		<div class="box3"></div>
+		<h4>По сути, здесь те же команды, что и у  транзишн. Но у транзишн нет фичи с бесконечными повторениями. </h4>
+		<div class="box4">Остановочка</div>
+		<div class="box5"><a href="https://animate.style/">Куча других анимаций здесь</a></div>
+		<div class="box6 animate__animated animate__bounce">box6 animate__animated animate__bounce</div>
+		<div class="box7 animate__animated animate__bounce">И не забудь залинковать animate.min!!!</div>
+	</section>
+	<section class="content__2D">
+		<h2>2D АНИМАЦИЯ</h2>
+		<section class="content__wrapper2d">
+			<div class="content_translate">TRANSLATE</div>
+			<div class="content_scale">scale</div>
+			<div class="content_scale1">scale</div>
+			<div class="content_rotate">rotate</div>
+			<div class="content_skew">skew</div>
+			<div class="content_matrix">matrix</div>
+			<div class="content_mix">mix, hold me</div>
+			<div class="content_origin">origin</div>
+		</section>
+	</section>
+	<section class="content__3D">
+		<h2>3D АНИМАЦИЯ</h2>
+		<section class="content__wrapper3d">
+			<div class="content_perspective">perspective</div>
+		</section>
+		<section class="content__wrapper3d">
+			<div class="content_perspective">perspective</div>
+		</section>
+		<section class="content__wrapper3d">
+			<div class="translate3D">translate 3d</div>
+		</section>
+		<section class="content__wrapper3d">
+			<div class="scale3D"> scale 3d</div>
+		</section>
+		<section class="content__wrapper3d">
+			<div class="rotate3D"> rotate 3d</div>
+		</section>
+		<section class="content_transform_style">
+			<div class="transform_style">transform style</div>
+		</section>
+		<div class="flip">
+			<div class="flip_body">
+				<div class="flip_front">
+					FRONT
+				</div>
+				<div class="flip_back">
+					BACK
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+</html>
